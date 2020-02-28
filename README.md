@@ -18,8 +18,14 @@ $ ./build.sh
 $ ./run.sh
 ```
 
+## 再生
+
+```
+$ ./play.sh
+```
+
 ## 実行＆再生
 
 ```
-$ ./run.sh && afplay NEUTRINO/output/sample1_syn.wav
+$ ./run_and_play.sh
 ```

@@ -11,7 +11,7 @@
 初回実行時とDockerfileに変更があった場合に行なう。
 
 ```
-$ ./build.sh
+$ ./bin/build.sh
 ```
 
 ## 実行
@@ -19,7 +19,7 @@ $ ./build.sh
 `./NEUTRINO/Run.sh`が実行される。
 
 ```
-$ ./run.sh
+$ ./bin/run.sh
 ```
 
 ## 再生
@@ -27,7 +27,7 @@ $ ./run.sh
 `./NEUTRINO/Run.sh`の`BASENAME`を読み取って、`./NEUTRINO/output/${BASENAME}_syn.wav`を`afplay`で再生。
 
 ```
-$ ./play.sh
+$ ./bin/play.sh
 ```
 
 ## 実行＆再生
@@ -35,7 +35,7 @@ $ ./play.sh
 `run.sh`の後に`play.sh`を実行。
 
 ```
-$ ./run_and_play.sh
+$ ./bin/run_and_play.sh
 ```
 
 ## TODO

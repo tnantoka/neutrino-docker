@@ -4,7 +4,7 @@
 
 ## 準備
 
-- NEUTRINOを`/NEUTRINO`に置く
+- NEUTRINO（Linux版）を`./NEUTRINO`に置く
 
 ## ビルド
 

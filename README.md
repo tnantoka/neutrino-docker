@@ -68,5 +68,7 @@ $ ./bin/run_and_play.sh
 
 ## 謝辞
 
+- https://twitter.com/mattintosh4/status/1233019581880360960  
+  Dockerで動作させる方法の参考になりました。
 - https://km4osm.com/neutrino-idea/  
   PitchShiftの周波数を利用させていただきました。

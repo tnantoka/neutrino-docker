@@ -4,8 +4,10 @@ BASENAME=sample1
 PITCH=1.0
 FORMANT=1.0
 MODEL=KIRITAN
+SKIP_RUN=false
+AUTO_PLAY=false
 
-while getopts n:p:f:m:s: OPT
+while getopts n:p:f:m:sa OPT
 do
   case $OPT in
     "n" )
@@ -45,7 +47,10 @@ do
       MODEL=$OPTARG
       ;;
     "s" )
-      SKIP=$OPTARG
+      SKIP_RUN=true
+      ;;
+    "a" )
+      AUTO_PLAY=true
       ;;
     "f" )
       FORMANT=$OPTARG
@@ -57,9 +62,10 @@ echo "BASENAME: ${BASENAME}"
 echo "PitchShift: ${PITCH}"
 echo "FormantShift: ${FORMANT}"
 echo "ModelDir: ${MODEL}"
-echo "SKIP: ${SKIP}"
+echo "SKIP_RUN: ${SKIP_RUN}"
+echo "AUTO_PLAY: ${AUTO_PLAY}"
 
-if [ "${SKIP}" != "run" ]; then
+if [ "${SKIP_RUN}" != "true" ]; then
   sed -e "s/BASENAME=.*/BASENAME=${BASENAME}/g" ./NEUTRINO/Run.sh | \
     sed -e "s/PitchShift=.*/PitchShift=${PITCH}/g" | \
     sed -e "s/ModelDir=.*/ModelDir=${MODEL}/g" | \
@@ -70,6 +76,6 @@ if [ "${SKIP}" != "run" ]; then
   docker run -v $PWD:/app -w /app/NEUTRINO neutrino ./Custom.sh
 fi
 
-if [ "${SKIP}" != "play" ]; then
+if [ "${AUTO_PLAY}" != "false" ]; then
   afplay ./NEUTRINO/output/${BASENAME}_syn.wav
 fi

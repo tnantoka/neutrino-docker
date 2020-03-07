@@ -2,6 +2,8 @@
 
 [NEUTRINO](https://n3utrino.work/) をDocker for Macで動かす用。
 
+NEUTRINO Version.0.103 で動作を確認しています。
+
 ## 使い方
 
 Dockerを使ったことがあればREADMEを読めば使えるはずです。

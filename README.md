@@ -47,6 +47,22 @@ $ ./bin/neutrino.sh -n sample2 -p 2
 -m | モデル | `KIRITAN`か`YOKO` | `KIRITAN`
 -s | スキップする処理 | `run`か`play`（`run`が指定されたら再生のみ、`play`が指定されたら合成のみ行われる） | なし
 
+## NEUTRINOのバージョンアップ
+
+```
+# 現在のバージョンをリネーム
+   $ mv NEUTRINO/ NEUTRINO_0102
+
+# 最新バージョンを配置
+$ mv ~/Downloads/NEUTRINO ./NEUTRINO
+
+# スコアを移動
+$ mv NEUTRINO_0102/score/musicxml/* NEUTRINO/score/musicxml/
+
+# 動作確認
+$ ./bin/neutrino.sh -n sample2
+```
+
 ## その他の使い方
 
 以下はNEUTRINO標準の`Run.sh`を実行する方法です。

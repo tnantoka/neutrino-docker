@@ -4,6 +4,13 @@
 
 NEUTRINO Version.0.103 で動作を確認しています。
 
+## NEUTRINO公式のmacOS版が出ました
+
+**NEUTRINO Version.0.103からmacOS版も公開されるようになりました。**  
+https://n3utrino.work/523/
+
+本repoの役割は終えたかもしれません。
+
 ## 使い方
 
 Dockerを使ったことがあればREADMEを読めば使えるはずです。

@@ -67,7 +67,7 @@ if [ "${SKIP}" != "run" ]; then
     ./NEUTRINO/Custom.sh
   chmod u+x ./NEUTRINO/Custom.sh
 
-  docker run -v $PWD:/app -w /app/NEUTRINO neutrino ./Custom.sh
+  docker run --rm -v $PWD:/app -w /app/NEUTRINO neutrino ./Custom.sh
 fi
 
 if [ "${SKIP}" != "play" ]; then

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker run -v $PWD:/app -w /app/NEUTRINO neutrino
+docker run --rm -v $PWD:/app -w /app/NEUTRINO neutrino

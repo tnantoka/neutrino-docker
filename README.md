@@ -51,7 +51,7 @@ $ ./bin/neutrino.sh -n sample2 -p 2
 -n | スコア名 | `NEUTRINO/score/musicxml/`にあるファイル名（拡張子を除く）| `sample1`
 -p | ピッチ | `-12`〜`12`のキーを表す整数。それ以外の数字を指定した場合はPitchShiftにそのまま渡されます | `1.0`
 -f | 声質 | 数字（0.85〜1.15を推奨） | `1.0`
--m | モデル | `KIRITAN`か`YOKO` | `KIRITAN`
+-m | モデル | `KIRITAN`か`KIRITAN_FAST`か`YOKO` | `KIRITAN`
 -s | スキップする処理 | `run`か`play`（`run`が指定されたら再生のみ、`play`が指定されたら合成のみ行われる） | なし
 
 ## NEUTRINOのバージョンアップ
